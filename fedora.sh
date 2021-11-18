@@ -47,7 +47,12 @@ sudo dnf install \
     schedtool \
     lzip \
     vboot-utils \
-    vim
+    vim \
+    perl \
+    libtool \
+    automake \
+    gettext-devel \
+    autoconf
 
 # The package libncurses5 is not available, so we need to hack our way by symlinking the required library.
 sudo ln -s /usr/lib/libncurses.so.6 /usr/lib/libncurses.so.5
